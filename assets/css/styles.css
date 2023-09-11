@@ -673,7 +673,7 @@ p, .caption {
 }
 
 hr.divider {
-    max-width: 768px;
+    max-width: 1024px;
     margin-top: 32px;
     margin-bottom: 32px;
 }
