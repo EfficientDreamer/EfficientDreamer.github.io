@@ -839,6 +839,7 @@
     };
 
     let meshRows = [
+        ['test1', 'test2'],
         ['frog', 'chick'],
         ['ghost', 'pig'],
         ['eagle', 'crab'],
