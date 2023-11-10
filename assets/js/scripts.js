@@ -766,7 +766,7 @@
     let meshAttributes = {
         german: {
             src: "/assets/glbs/german.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            poster: "images/german.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A German Sheperd.",
             shortCaption: "A German Sheperd."
