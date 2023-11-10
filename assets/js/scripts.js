@@ -764,6 +764,22 @@
     };
 
     let meshAttributes = {
+        test1: {
+            src: "/assets/glbs/1.glb",
+            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+            caption: "test1 glb",
+            // shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+        },
+
+        test2: {
+            src: "/assets/glbs/2.glb",
+            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+            caption: "test2 glb",
+            // shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+        },
+
         chick: {
             src: "https://dreamfusion3d.github.io/assets/meshes2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.glb",
             poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
