@@ -693,7 +693,7 @@
   let thumbnails = document.getElementById("randomVideos");
 
 //   videoPaths = videoPaths.slice(0, 3);
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 0; i++) {
         let outer = document.createElement("DIV");
         outer.classList = "col-4";
         let inner = document.createElement("DIV");
