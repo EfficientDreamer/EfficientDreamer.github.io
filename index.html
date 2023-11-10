@@ -120,7 +120,7 @@
     </div>
 
     <div class="container" style="max-width: 1024px;">
-        <img class="summary-img" src="figs/teaser.png" style="width:100%;"> <br>
+        <img class="summary-img" src="figs/teaser_v5.png" style="width:100%;"> <br>
     </div>
     
     <hr class="divider" />
@@ -138,7 +138,7 @@
             </div>
         </div>
 
-        <img class="summary-img" src="figs/framework.png" style="width:100%;"> <br>
+        <img class="summary-img" src="figs/pipeline_v5.png" style="width:100%;"> <br>
 
     </div>
 
@@ -180,8 +180,41 @@
                 </div>
                 <h6 class="caption">A pig wearing a backpack, high quality.</h6>
             </div>
+
+            
         </div>
 
+        <div class="row captioned_videos">
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/1_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">Viking axe fantasy, weapon, blender, 8k, HD.</h6>
+            </div>
+
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/6_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">Mr Bean Cartoon doing a T Pose.</h6>
+            </div>
+
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/7_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">A motorcycle, scifi, high detail, high quality.</h6>
+            </div>
+        </div>
     </div>
 
     
@@ -262,10 +295,10 @@
             </video>
             <p class="text-center"><em>An astronaut is riding a horse, high detail 3d model.</em>  </p>
 
-            <video  width="100%" loop autoplay muted>
+            <!-- <video  width="100%" loop autoplay muted>
                 <source src="mp4/17_compare.mp4" type="video/mp4">
             </video>
-            <p class="text-center"><em>A rabbit, animated movie character, high detail 3d model.</em>  </p>
+            <p class="text-center"><em>A rabbit, animated movie character, high detail 3d model.</em>  </p> -->
 
             <video  width="100%" loop autoplay muted>
                 <source src="mp4/2_compare.mp4" type="video/mp4">
@@ -332,15 +365,102 @@
             </video>
             <p class="text-center"><em>A recliner chair.</em>  </p>
 
-            <video  width="100%" loop autoplay muted>
+            <!-- <video  width="100%" loop autoplay muted>
                 <source src="mp4/7_compare.mp4" type="video/mp4">
             </video>
-            <p class="text-center"><em>A baby bunny sitting on top of a stack of pancake.</em>  </p>
+            <p class="text-center"><em>A baby bunny sitting on top of a stack of pancake.</em>  </p> -->
             
             <video  width="100%" loop autoplay muted>
                 <source src="mp4/21_compare.mp4" type="video/mp4">
             </video>
             <p class="text-center"><em>A 3D model of a road bike.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/22_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Viking axe fantasy, weapon, blender, 8k, HD.</em>  </p>
+            
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/23_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Dragon_armor, 3D_asset.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/24_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A photo of a horse_walking.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/25_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>TRUMP figure, high_detail, high_quality.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/26_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Pikachu with hat, high detail, high quality.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/27_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Mr Bean Cartoon doing a T Pose.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/28_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A motorcycle, scifi.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/29_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Katana, high detail, high quality.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/30_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Darth Vader helmet, highly detailed, high quality.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/31_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Corgi riding a rocket.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/32_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>Army Jacket.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/33_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A statue of angel.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/34_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A squirrel playing guitar.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/35_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A ghost eating a hamburger.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/36_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A crab, low_poly.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/37_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A bulldog wearing a black pirate hat.</em>  </p>
+
+            <video  width="100%" loop autoplay muted>
+                <source src="mp4/38_compare.mp4" type="video/mp4">
+            </video>
+            <p class="text-center"><em>A 3D scan of AK47, weapon.</em>  </p>
+
+
 
         </div>
 
