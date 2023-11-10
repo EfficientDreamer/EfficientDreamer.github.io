@@ -782,7 +782,7 @@
 
         ak47: {
             src: "/assets/glbs/ak47.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            poster: "/assets/images/ak47.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A 3D scan of AK47, weapon.",
             shortCaption: "A 3D scan of AK47, weapon."
@@ -790,7 +790,7 @@
 
         tank: {
             src: "/assets/glbs/tank.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            poster: "/assets/images/tank.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A product photo of a toy tank, high detail 3d model.",
             shortCaption: "A product photo of a toy tank, high detail 3d model."
@@ -798,7 +798,7 @@
 
         cottage: {
             src: "/assets/glbs/cottage.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            poster: "/assets/images/cottage.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A 3D model of an adorable cottage with a thatched roof.",
             shortCaption: "A 3D model of an adorable cottage with a thatched roof."
@@ -806,7 +806,7 @@
 
         corgi: {
             src: "/assets/glbs/corgi.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+            poster: "/assets/images/corgi.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A 3D model of a corgi taking a selfie, high detail.",
             shortCaption: "A 3D model of a corgi taking a selfie, high detail."
