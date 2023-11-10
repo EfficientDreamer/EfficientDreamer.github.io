@@ -764,86 +764,119 @@
     };
 
     let meshAttributes = {
-        test1: {
-            src: "/assets/glbs/1.glb",
+        german: {
+            src: "/assets/glbs/german.glb",
             poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "test1 glb",
-            shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+            caption: "A German Sheperd.",
+            shortCaption: "A German Sheperd."
         },
 
-        test2: {
-            src: "/assets/glbs/2.glb",
+        peacock: {
+            src: "/assets/glbs/peacock.glb",
             poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "test2 glb",
-            shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+            caption: "A peacock on a surfboard.",
+            shortCaption: "A peacock on a surfboard."
         },
 
-        chick: {
-            src: "https://dreamfusion3d.github.io/assets/meshes2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.glb",
+        ak47: {
+            src: "/assets/glbs/ak47.glb",
             poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a DSLR photo of an eggshell broken in two with an adorable chick standing next to it",
-            shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+            caption: "A 3D scan of AK47, weapon.",
+            shortCaption: "A 3D scan of AK47, weapon."
         },
-        pig: {
-            src: "/assets/meshes2/44844973_sept18_hero14_076a_pig_wearing_a_backpack_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44844973_sept18_hero14_076a_pig_wearing_a_backpack_1step.png",
+
+        tank: {
+            src: "/assets/glbs/tank.glb",
+            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a pig wearing a backpack",
-            shortCaption: "a pig wearing a backpack"
+            caption: "A product photo of a toy tank, high detail 3d model.",
+            shortCaption: "A product photo of a toy tank, high detail 3d model."
         },
-        frog: {
-            src: "/assets/meshes2/sweaterfrog_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/sweaterfrog_1step.jpg",
+
+        cottage: {
+            src: "/assets/glbs/cottage.glb",
+            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a DSLR photo of a frog wearing a sweater",
-            shortCaption: "[...] frog wearing a sweater",
+            caption: "A 3D model of an adorable cottage with a thatched roof.",
+            shortCaption: "A 3D model of an adorable cottage with a thatched roof."
         },
-        lemur: {
-            src: "/assets/meshes2/44853505_sept18_hero15_124a_lemur_taking_notes_in_a_journal_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44853505_sept18_hero15_124a_lemur_taking_notes_in_a_journal_1step.png",
-            "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a lemur taking notes in a journal",
-            shortCaption: "a lemur taking notes in a journal",
-        },
-        eagle: {
-            src: "/assets/meshes2/44853505_sept18_hero15_145a_bald_eagle_carved_out_of_wood_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44853505_sept18_hero15_145a_bald_eagle_carved_out_of_wood_1step.png",
-            "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a bald eagle carved out of wood",
-            shortCaption: "a bald eagle carved out of wood",
-        },
-        crab: {
-            src: "/assets/meshes2/44930695_sept18_hero18_103a_crab,_low_poly_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44930695_sept18_hero18_103a_crab,_low_poly_1step.png",
-            "environment-image": "https://modelviewer.dev/shared-assets/environments/whipple_creek_regional_park_04_1k.hdr",
-            caption: "a crab, low poly",
-            shortCaption: "a crab, low poly",
-        },
-        ghost: {
-            src: "/assets/meshes2/44934035_sept18_hero19_113a_DSLR_photo_of_a_ghost_eating_a_hamburger_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44934035_sept18_hero19_113a_DSLR_photo_of_a_ghost_eating_a_hamburger_1step.png",
-            "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a DSLR photo of a ghost eating a hamburger",
-            shortCaption: "[...] ghost eating a hamburger",
-        },
+
         corgi: {
-            src: "/assets/meshes2/44960400_sept18_hero20peter_117a_plush_toy_of_a_corgi_nurse_1step.glb",
-            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44960400_sept18_hero20peter_117a_plush_toy_of_a_corgi_nurse_1step.png",
+            src: "/assets/glbs/corgi.glb",
+            poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "a plush toy of a corgi nurse",
-            shortCaption: "a plush toy of a corgi nurse",
+            caption: "A 3D model of a corgi taking a selfie, high detail.",
+            shortCaption: "A 3D model of a corgi taking a selfie, high detail."
         },
+
+        //
+        // chick: {
+        //     src: "https://dreamfusion3d.github.io/assets/meshes2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44855521_sept18_hero16_047a_DSLR_photo_of_an_eggshell_broken_in_two_with_an_adorable_chick_standing_next_to_it_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a DSLR photo of an eggshell broken in two with an adorable chick standing next to it",
+        //     shortCaption: "[...] eggshell broken in two with an adorable chick standing next to it"
+        // },
+        // pig: {
+        //     src: "/assets/meshes2/44844973_sept18_hero14_076a_pig_wearing_a_backpack_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44844973_sept18_hero14_076a_pig_wearing_a_backpack_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a pig wearing a backpack",
+        //     shortCaption: "a pig wearing a backpack"
+        // },
+        // frog: {
+        //     src: "/assets/meshes2/sweaterfrog_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/sweaterfrog_1step.jpg",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a DSLR photo of a frog wearing a sweater",
+        //     shortCaption: "[...] frog wearing a sweater",
+        // },
+        // lemur: {
+        //     src: "/assets/meshes2/44853505_sept18_hero15_124a_lemur_taking_notes_in_a_journal_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44853505_sept18_hero15_124a_lemur_taking_notes_in_a_journal_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a lemur taking notes in a journal",
+        //     shortCaption: "a lemur taking notes in a journal",
+        // },
+        // eagle: {
+        //     src: "/assets/meshes2/44853505_sept18_hero15_145a_bald_eagle_carved_out_of_wood_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44853505_sept18_hero15_145a_bald_eagle_carved_out_of_wood_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a bald eagle carved out of wood",
+        //     shortCaption: "a bald eagle carved out of wood",
+        // },
+        // crab: {
+        //     src: "/assets/meshes2/44930695_sept18_hero18_103a_crab,_low_poly_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44930695_sept18_hero18_103a_crab,_low_poly_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/whipple_creek_regional_park_04_1k.hdr",
+        //     caption: "a crab, low poly",
+        //     shortCaption: "a crab, low poly",
+        // },
+        // ghost: {
+        //     src: "/assets/meshes2/44934035_sept18_hero19_113a_DSLR_photo_of_a_ghost_eating_a_hamburger_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44934035_sept18_hero19_113a_DSLR_photo_of_a_ghost_eating_a_hamburger_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a DSLR photo of a ghost eating a hamburger",
+        //     shortCaption: "[...] ghost eating a hamburger",
+        // },
+        // corgi: {
+        //     src: "/assets/meshes2/44960400_sept18_hero20peter_117a_plush_toy_of_a_corgi_nurse_1step.glb",
+        //     poster: "https://dreamfusion-cdn.ajayj.com/mesh_previews2/44960400_sept18_hero20peter_117a_plush_toy_of_a_corgi_nurse_1step.png",
+        //     "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
+        //     caption: "a plush toy of a corgi nurse",
+        //     shortCaption: "a plush toy of a corgi nurse",
+        // },
     };
 
     let meshRows = [
-        ['test1', 'test2'],
-        ['frog', 'chick'],
-        ['ghost', 'pig'],
-        ['eagle', 'crab'],
-        ['lemur', 'corgi'],
+        ['german', 'peacock'],
+        ['ak47', 'tank'],
+        ['cottage', 'corgi'],
+        // ['eagle', 'crab'],
+        // ['lemur', 'corgi'],
     ];
 
     let container = document.getElementById("meshContainer");
