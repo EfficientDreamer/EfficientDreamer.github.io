@@ -161,9 +161,82 @@
             </div>
         </div>
     </div>
-
-
+    
     <hr class="divider" />
+    <div class="container" style="max-width: 1024px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Example generated objects</h2>
+                <p>EfficientDreamer generates objects and scenes from diverse captions.</p>
+            </div>
+        </div>
+
+        <div class="row captioned_videos">
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex1" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/19_ours.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex1Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">A squirrel, animated movie character, high detail 3d model.</h6>
+            </div>
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/10_ours.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex2Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">A DSLR photo of a yellow duck.</h6>
+            </div>
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/15_ours.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">A pig wearing a backpack, high quality.</h6>
+            </div>
+
+            
+        </div>
+
+        <div class="row captioned_videos">
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/1_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex4Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">Viking axe fantasy, weapon, blender, 8k, HD.</h6>
+            </div>
+
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/6_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex5Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">Mr Bean Cartoon doing a T Pose.</h6>
+            </div>
+
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source src="normals/7_crop.mp4" type="video/mp4"></source>
+                    </video>
+                    <canvas height="752" class="videoMerge" id="ex6Merge" width="1002"></canvas>
+                </div>
+                <h6 class="caption">A motorcycle, scifi, high detail, high quality.</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr class="divider" />
     <div class="container" style="max-width: 1024px;">
         <div class="row">
             <div class="col-sm-8">
@@ -179,7 +252,7 @@
         </div>
         <div class="row captioned_videos" id="randomVideos">
         </div>
-    </div>
+    </div> -->
     
     <hr class="divider" />
     <div class="container meshes" id="meshContainer" style="max-width: 1024px;">
