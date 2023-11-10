@@ -14,7 +14,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>DreamFusion: Text-to-3D using 2D Diffusion</title>
+    <title>EfficientDreamer: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
@@ -25,19 +25,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <meta property="og:site_name" content="DreamFusion: Text-to-3D using 2D Diffusion" />
+    <meta property="og:site_name" content="EfficientDreamer: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="DreamFusion: Text-to-3D using 2D Diffusion" />
-    <meta property="og:description" content="DreamFusion: Text-to-3D using 2D Diffusion, 2022." />
-    <meta property="og:url" content="https://dreamfusion3d.github.io/" />
-    <meta property="og:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png" />
+    <meta property="og:title" content="EfficientDreamer: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior" />
+    <meta property="og:description" content="EfficientDreamer: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior, 2022." />
+    <meta property="og:url" content="https://efficientdreamer.github.io/" />
+    <meta property="og:image" content="https://efficientdreamer.github.io/assets/images/dreamfusion_samples.png" />
 
-    <meta property="article:publisher" content="https://dreamfusion3d.github.io/" />
+    <meta property="article:publisher" content="https://efficientdreamer.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DreamFusion: Text-to-3D using 2D Diffusion" />
+    <meta name="twitter:title" content="EfficientDreamer: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior" />
     <meta name="twitter:description" content="We combine neural rendering with a multi-modal text-to-2D image diffusion generative model to synthesize diverse 3D objects from text." />
-    <meta name="twitter:url" content="https://dreamfusion3d.github.io/" />
-    <meta name="twitter:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png" />
+    <meta name="twitter:url" content="https://efficientdreamer.github.io/" />
+    <meta name="twitter:image" content="https://efficientdreamer.github.io/assets/images/dreamfusion_samples.png" />
     <!-- <meta name="twitter:site" content="" /> -->
 
     <script src="assets/js/video_comparison.js"></script>
@@ -45,21 +45,39 @@
 </head>
 
 <body>
-    <div class="banner">
+    <!-- <div class="banner">
       <video class="video lazy"
           poster="https://dreamfusion-cdn.ajayj.com/sept28/banner_1x6_customhue_A.jpg"
           autoplay loop playsinline muted>
         <source data-src="https://dreamfusion-cdn.ajayj.com/sept28/banner_1x6_customhue_A.mp4" type="video/mp4"></source>
       </video>
-    </div>
+    </div> -->
     <div class="highlight-clean" style="padding-bottom: 10px;">
-        <div class="container" style="max-width: 768px;">
-            <h1 class="text-center"><b>DreamFusion</b>: Text-to-3D using 2D Diffusion</h1>
+        
+        <div class="container" style="max-width: 1024px;">
+            <h1 class="text-center"><b>EfficientDreamer</b>: High-Fidelity and Robust 3D Creation via Orthogonal-view Diffusion Prior</h1>
         </div>
-        <div class="container" style="max-width: 768px;">
-            <div class="row authors">
+        <div class="container" style="max-width: 1024px;">
+<!--            <p id="authors" class="text-center">-->
+<!--                <a href="mailto:zhaominda01@corp.netease.com">Minda Zhao<sup>1</sup></a>-->
+<!--                <a  href="mailto:zhaochaoyi@corp.netease.com">Chaoyi Zhao<sup>1</sup></a>-->
+<!--                <a href="mailto:liangxinyue03@corp.netease.com">Xinyue Liang<sup>1</sup></a>-->
+<!--                <a href="mailto:lilincheng@corp.netease.com">Lincheng Li<sup>1</sup></a>-->
+<!--                <a href="mailto:hzzhaozeng@corp.netease.com">Zeng Zhao<sup>1</sup></a>-->
+<!--                <a href="mailto:zphu@corp.netease.com">Zhipeng Hu<sup>1</sup></a>-->
+<!--                <a href="mailto:fanchangjie@corp.netease.com">Changjie Fan<sup>1</sup></a>-->
+<!--                <a href="mailto:xin.yu@uq.edu.au">Xin Yu<sup>2</sup></a>-->
+
+<!--                <br>-->
+<!--                <span style="font-size: 0.8em; margin-top: 0.5em">-->
+<!--                <a><sup>1</sup> NetEase Fuxi AI Lab</a>-->
+<!--                <a><sup>2</sup> University of Queensland</a>-->
+<!--                </span>-->
+<!--            </p>-->
+            
+            <!-- <div class="row authors">
                 <div class="col-sm-3">
-                    <h5 class="text-center"><a class="text-center" href="https://cs.stanford.edu/~poole/">Ben Poole</a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://cs.stanford.edu/~poole/">Minda Zhao</a></h5>
                     <h6 class="text-center">Google Research</h6>
                 </div>
                 <div class="col-sm-3">
@@ -74,98 +92,68 @@
                     <h5 class="text-center"><a class="text-center" href="https://bmild.github.io/">Ben Mildenhall</a></h5>
                     <h6 class="text-center">Google Research</h6>
                 </div>
-            </div>    
+            </div>     -->
         </div>
+
+
+
+
         <div class="buttons" style="margin-bottom: 8px;">
-            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2209.14988">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2308.13223">
                 <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
                 </svg>Paper
             </a>
-            <a class="btn btn-light disabled border border-dark" aria-disabled="true" role="button" href="#">
-                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
-                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "/>
+            <a class="btn btn-light" role="button" href="https://github.com/EfficientDreamer/EfficientDreamer">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 375 531">
+                    <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
                 </svg>
                 Project
             </a>
-            <a class="btn btn-light" role="button" href="/gallery.html">
+            <!-- <a class="btn btn-light" role="button" href="/gallery.html">
                 <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px" viewBox="0 0 375 531">
                     <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "/>
                 </svg>
                 Gallery
-            </a>
+            </a> -->
         </div>
     </div>
+
+    <div class="container" style="max-width: 1024px;">
+        <img class="summary-img" src="figs/teaser_v5.png" style="width:100%;"> <br>
+    </div>
+    
     <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
+    <div class="container" style="max-width: 1024px;">
+        
+        
         <div class="row">
             <div class="col-md-12">
                 <h2>Abstract</h2>
                 <p>
                     <!-- <strong> -->
-                        Recent breakthroughs in text-to-image synthesis have been driven by diffusion models trained on billions of image-text pairs. Adapting this approach to 3D synthesis would require large-scale datasets of labeled 3D assets and efficient architectures for denoising 3D data, neither of which currently exist. In this work, we circumvent these limitations by using a pretrained 2D text-to-image diffusion model to perform text-to-3D synthesis. We introduce a loss based on probability density distillation that enables the use of a 2D diffusion model as a prior for optimization of a parametric image generator. Using this loss in a DeepDream-like procedure, we optimize a randomly-initialized 3D model (a Neural Radiance Field, or NeRF) via gradient descent such that its 2D renderings from random angles achieve a low loss. The resulting 3D model of the given text can be viewed from any angle, relit by arbitrary illumination, or composited into any 3D environment. Our approach requires no 3D training data and no modifications to the image diffusion model, demonstrating the effectiveness of pretrained image diffusion models as priors.
+                        While the image diffusion model has made significant strides in text-driven 3D content creation, it often falls short in accurately capturing the intended meaning of the text prompt, particularly with respect to direction information. This shortcoming gives rise to the Janus problem, where multi-faced 3D models are produced with the guidance of such diffusion models. In this paper, we present a robust pipeline for generating high-fidelity 3D content with orthogonal-view image guidance. Specifically, we introduce a novel 2D diffusion model that generates an image consisting of four orthogonal-view sub-images for the given text prompt. The 3D content is then created with this diffusion model, which enhances 3D consistency and provides strong structured semantic priors. This addresses the infamous Janus problem and significantly promotes generation efficiency. Additionally, we employ a progressive 3D synthesis strategy that results in substantial improvement in the quality of the created 3D contents. Both quantitative and qualitative evaluations show that our method demonstrates a significant improvement over previous text-to-3D techniques.
                     <!-- </strong> -->
                 </p>
             </div>
         </div>
+
+        <img class="summary-img" src="figs/pipeline_v5.png" style="width:100%;"> <br>
+
     </div>
-    <div class="container" style="max-width: 768px;">
-        <div class="row captioned_videos">
-            <div class="col-md-12">
-                <!-- Large format devices -->
-                <video class="video lazy d-none d-xs-none d-sm-block" autoplay loop playsinline muted poster="https://dreamfusion-cdn.ajayj.com/sept28/wipe_opposite_6x4_smoothstep.jpg">
-                    <source data-src="https://dreamfusion-cdn.ajayj.com/sept28/wipe_opposite_6x4_smoothstep.mp4" type="video/mp4"></source>
-                </video>
-                <!-- Small format devices -->
-                <video class="video lazy d-xs-block d-sm-none" autoplay loop playsinline muted poster="https://dreamfusion-cdn.ajayj.com/sept28/shaded_3x3_smoothstep.jpg">
-                    <source data-src="https://dreamfusion-cdn.ajayj.com/sept28/shaded_3x3_smoothstep.mp4" type="video/mp4"></source>
-                </video>
-                <h6 class="caption">Given a caption, DreamFusion generates relightable 3D objects with high-fidelity appearance, depth, and normals. Objects are represented as a Neural Radiance Field and leverage a pretrained text-to-image diffusion prior such as Imagen.</h6>
-            </div>
-        </div>
-    </div>
+
+
     <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
+    <div class="container" style="max-width: 1024px;">
         <div class="row">
-            <div class="col-md-12">
-                <h2>Generate 3D from text yourself!</h2>
-            </div>
-        </div>
-        <div class="row compositional captioned_videos">
-            <div class="col-sm-8 text">
-                <p class="selectable left" id="compositional_tags_depth_0"></p>
-            </div>
-            <div class="col-sm-4 my-auto">
-                <div class="video-compare-container">
-                    <video id="compositionalVideo" class="video" autoplay loop playsinline muted>
-                        <div class="screen" id="compositionalScreen"></div>
-                        <source id="compositionalVideoSrc" src="https://dreamfusion-cdn.ajayj.com/journey_sept28/cropped/full_continuous/a_DSLR_photo_of_a_squirrel___rgbdn_hq_15000.mp4" type="video/mp4">
-                    </video>
-                    <!-- <video onplay="resizeAndPlay(this)" style="height: 0px;" id="compositionalVideo" class="video lazy" autoplay loop playsinline muted>
-                        <source id="compositionalVideoSrc" data-src="https://dreamfusion-cdn.ajayj.com/journey_sept28/full/a_DSLR_photo_of_a_squirrel___rgbdn_hq_15000.mp4" type="video/mp4">
-                    </video> -->
-                    <!-- <canvas height="752" class="videoMerge" id="compositionalVideoMerge" width="1002"></canvas> -->
-                </div>
-                <!-- <h6 class="caption" id="compositionalCaption">a DSLR photo of a squirrel</h6> -->
-            </div>
-        </div>
-    </div>
-    <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
-        <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-12">
                 <h2>Example generated objects</h2>
-                <p>DreamFusion generates objects and scenes from diverse captions. <a href="/gallery.html">Search through hundreds of generated assets in our full gallery.</a></p>
-            </div>
-            <div class="col-sm-4 my-auto">
-                <a href="/gallery.html" class="btn btn-primary btn-lg btn-search"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewbox="0 0 600 550">
-                    <path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
-                    </svg>Search assets
-                </a>
+                <p>EfficientDreamer generates objects and scenes from diverse captions.</p>
             </div>
         </div>
-        <div class="row captioned_videos" id="randomVideos">
-            <!-- <div class="col-4">
+
+        <div class="row captioned_videos">
+            <div class="col-4">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex1" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source data-src="https://dreamfusion-cdn.ajayj.com/gallery/a_teddy_bear_pushing_a_shopping_cart_full_of_fruits_and_vegetables_rgbdn_hq_15000.mp4" type="video/mp4"></source>
