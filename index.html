@@ -161,18 +161,18 @@
             </div>
         </div>
     </div>
-    
+
     <hr class="divider" />
     <div class="container" style="max-width: 1024px;">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col">
                 <h2>Example generated objects</h2>
                 <p>EfficientDreamer generates objects and scenes from diverse captions.</p>
             </div>
         </div>
 
         <div class="row captioned_videos">
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex1" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/19_ours.mp4" type="video/mp4"></source>
@@ -181,7 +181,7 @@
                 </div>
                 <h6 class="caption">A squirrel, animated movie character, high detail 3d model.</h6>
             </div>
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex2" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/10_ours.mp4" type="video/mp4"></source>
@@ -190,7 +190,7 @@
                 </div>
                 <h6 class="caption">A DSLR photo of a yellow duck.</h6>
             </div>
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex3" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/15_ours.mp4" type="video/mp4"></source>
@@ -204,7 +204,7 @@
         </div>
 
         <div class="row captioned_videos">
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex4" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/1_crop.mp4" type="video/mp4"></source>
@@ -214,7 +214,7 @@
                 <h6 class="caption">Viking axe fantasy, weapon, blender, 8k, HD.</h6>
             </div>
 
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex5" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/6_crop.mp4" type="video/mp4"></source>
@@ -224,7 +224,7 @@
                 <h6 class="caption">Mr Bean Cartoon doing a T Pose.</h6>
             </div>
 
-            <div class="col-4">
+            <div class="col">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex6" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/7_crop.mp4" type="video/mp4"></source>
@@ -263,22 +263,8 @@
             </div>
         </div>
     </div>
-    <hr class="divider" />
-    <div class="container" style="max-width: 1024px;">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>How does DreamFusion work?</h2>
-                <p>Given a caption, DreamFusion uses a text-to-image generative model called Imagen to optimize a 3D scene. We propose <strong>Score Distillation Sampling (SDS)</strong>, a way to generate samples from a diffusion model by optimizing a loss function. SDS allows us to optimize samples in an arbitrary parameter space, such as a 3D space, as long as we can map back to images differentiably. We use a 3D scene parameterization similar to Neural Radiance Fields, or NeRFs, to define this differentiable mapping. SDS alone produces reasonable scene appearance, but DreamFusion adds additional regularizers and optimization strategies to improve geometry. The resulting trained NeRFs are coherent, with high-quality normals, surface geometry and depth, and are relightable with a Lambertian shading model.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <video class="video lazy" controls muted poster="https://dreamfusion-cdn.ajayj.com/dreamfusion_overview.jpg">
-                    <source data-src="https://dreamfusion-cdn.ajayj.com/dreamfusion_overview.mp4" type="video/mp4"></source>
-                </video>
-            </div>
-        </div>
-    </div>
+
+    
     <hr class="divider" />
     <div class="container" style="max-width: 1024px;">
         <div class="row">
