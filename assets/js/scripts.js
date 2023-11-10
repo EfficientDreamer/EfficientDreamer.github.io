@@ -766,7 +766,7 @@
     let meshAttributes = {
         german: {
             src: "/assets/glbs/german.glb",
-            poster: "/images/german.png",
+            poster: "assets/images/german.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
             caption: "A German Sheperd.",
             shortCaption: "A German Sheperd."
