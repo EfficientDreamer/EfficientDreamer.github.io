@@ -190,7 +190,7 @@
                     <video class="video lazy" id="ex4" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/1_crop.mp4" type="video/mp4"></source>
                     </video>
-                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                    <canvas height="752" class="videoMerge" id="ex4Merge" width="1002"></canvas>
                 </div>
                 <h6 class="caption">Viking axe fantasy, weapon, blender, 8k, HD.</h6>
             </div>
@@ -200,7 +200,7 @@
                     <video class="video lazy" id="ex5" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/6_crop.mp4" type="video/mp4"></source>
                     </video>
-                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                    <canvas height="752" class="videoMerge" id="ex5Merge" width="1002"></canvas>
                 </div>
                 <h6 class="caption">Mr Bean Cartoon doing a T Pose.</h6>
             </div>
@@ -210,13 +210,57 @@
                     <video class="video lazy" id="ex6" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
                         <source src="normals/7_crop.mp4" type="video/mp4"></source>
                     </video>
-                    <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
+                    <canvas height="752" class="videoMerge" id="ex6Merge" width="1002"></canvas>
                 </div>
                 <h6 class="caption">A motorcycle, scifi, high detail, high quality.</h6>
             </div>
         </div>
     </div>
 
+
+    <hr class="divider" />
+    <div class="container meshes" id="meshContainer" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Mesh exports</h2>
+                <p>Our generated NeRF models can be exported to meshes using the marching cubes algorithm for easy integration into 3D renderers or modeling software.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider" />
+    
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 1024px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Example generated objects</h2>
+                <p>EfficientDreamer generates objects and scenes from diverse captions.</p>
+            </div>
+        </div>
+
+        <div class="row captioned_videos">
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video  width="100%" loop autoplay muted>
+                        <source src="mp4/19_compare.mp4" type="video/mp4">
+                    </video>
+                    <p class="text-center"><em>A squirrel, animated movie character, high detail 3d model.</em>  </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="video-compare-container" style="width: 100%">
+                    <video  width="100%" loop autoplay muted>
+                        <source src="mp4/19_compare.mp4" type="video/mp4">
+                    </video>
+                    <p class="text-center"><em>A squirrel, animated movie character, high detail 3d model.</em>  </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
     
     <hr class="divider" />
 
@@ -228,6 +272,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <div class="container" style="max-width: 900px;">
 
@@ -264,16 +310,17 @@
         </div> -->
 
         <div class="row captioned_videos"></div>
-           
-            <video  width="100%" loop autoplay muted>
-                <source src="mp4/19_compare.mp4" type="video/mp4">
-            </video>
-            <p class="text-center"><em>A squirrel, animated movie character, high detail 3d model.</em>  </p>
-            <video  width="100%" loop autoplay muted>
-                <source src="mp4/15_compare.mp4" type="video/mp4">
-            </video>
-            <p class="text-center"><em>A pig wearing a backpack, high quality.</em>  </p>
-
+            <div>
+                <video  width="100%" loop autoplay muted>
+                    <source src="mp4/19_compare.mp4" type="video/mp4">
+                </video>
+                <p class="text-center"><em>A squirrel, animated movie character, high detail 3d model.</em>  </p>
+                
+                <video  width="100%" loop autoplay muted>
+                    <source src="mp4/15_compare.mp4" type="video/mp4">
+                </video>
+                <p class="text-center"><em>A pig wearing a backpack, high quality.</em>  </p>
+            </div>
            
             <video  width="100%" loop autoplay muted>
                 <source src="mp4/10_compare.mp4" type="video/mp4">
