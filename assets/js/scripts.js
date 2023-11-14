@@ -768,8 +768,8 @@
             src: "/assets/glbs/german.glb",
             poster: "/assets/images/german.png",
             "environment-image": "https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr",
-            caption: "A German Sheperd.",
-            shortCaption: "A German Sheperd."
+            caption: "A 3D model of a German Shepherd.",
+            shortCaption: "A 3D model of a German Shepherd."
         },
 
         peacock: {
