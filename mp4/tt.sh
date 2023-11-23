@@ -1,0 +1,1 @@
+for %a in ("*.mp4") do  ffmpeg -i "%a" "fig/%~na.gif"
